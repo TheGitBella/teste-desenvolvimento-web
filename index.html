@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./JS/function.js"></script>
+    <title>Pokedéx Redfox</title>
+</head>
+<body>
+    <header>
+        <div class="head row">
+            <a href="https://redfox.tech/" target="_blank"><img src=".\Images\LogoRedfox.png" class="head-img-rf"></a>
+            <h1>UM PROJETO REDCAMP 2.0</h1>
+            <img src=".\Images\LogoPokemon.png" class="head-img-pg">
+        </div>
+        <div class="nav row">
+            <button class="nav-btn">Pokedex</button>
+            <button class="nav-btn">Meus Pokemons</button>
+        </div>
+        <div class="research row">
+            <div>
+                <select placeholder="Organizar resultados por..." id="filter-select">
+                    <option>↑    Nome     ↑</option>
+                    <option>↓    Nome     ↓</option>
+                    <option>↑    Nº Pokedex     ↑</option>
+                    <option>↓    Nº Pokedex     ↓</option>
+                </select>
+                <button id="filter-btn">Busca avançada...</button>
+            </div>
+                <div class="research-bar row">
+                    <input placeholder="Pesquisa..." id="filter-text"></input>
+                    <button class="research-btn"><img src=".\Images\ResearchBtn.png" class="research-img" onclick="adffasd()"></button>
+                </div>
+        </div>
+    </header>
+    <main>
+        <section class="list">
+            <div class="card">
+                <img src=".\Images\ImagemTeste.jpg" id="img-pokedex">
+                <h2 id="name-pokedex">Pokemon</h2>
+                <h3 id="id-pokedex">001</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-info" class="row">
+            <p id="dev-info">@Developed by Bella</p>
+            <nav id="dev-link">
+                <a href="https://github.com/TheGitBella" target="_blank"><img src=".\Images\Github.png" class="dev-img"></a>
+                <a href="www.linkedin.com/in/isabella-ramos-carvalho" target="_blank"><img src=".\Images\Linkedin.png" class="dev-img"></a>
+            </nav>
+        </div>
+        <div id="footer-bar"></div>
+    </footer>
+
+    <script>
+        axios.get('http://localhost:8080/')
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.error(error);
+        })
+        .then(function () {
+        });
+    </script>
+
+</body>
+</html>
