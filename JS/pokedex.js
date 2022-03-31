@@ -824,5 +824,4 @@ pokedex = [
     {"Name":"Magearna","PokedexNumber":"801","ImgName":"801","Generation":"7","EvolutionStage":"Evolved","FamilyID":"","CrossGen":"0","Type1":"steel","Type2":"fairy","Weather1":"Snow","Weather2":"Cloudy","STATTOTAL":"631","ATK":"246","DEF":"225","STA":"160","Legendary":"1","Aquireable":"0","Spawns":"0","Regional":"0","Raidable":"0","Hatchable":"0","Shiny":"0","Nest":"0","NotGettable":"0"}
     ]
 
-/*     exports.pokedex = pokedex; */
-export default pokedex;
+exports.pokedex = pokedex;
